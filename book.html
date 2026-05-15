@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Book a training session at SRC Sports Academy. Choose your sport, date and time, then submit your booking request." />
+  <title>Book Now | SRC Sports Academy</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a class="nav-logo" href="index.html" aria-label="SRC Sports Academy Home">
+        <div class="nav-logo-icon">SRC</div>
+        <div class="nav-logo-text"><span>Sports Academy</span><span>Pentecost University</span></div>
+      </a>
+      <ul class="nav-links" role="menubar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="sports.html">New Sports</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="book.html" class="book-cta active">Book Now</a></li>
+      </ul>
+      <div class="nav-search" role="search">
+        <label for="site-search" class="sr-only">Search the site</label>
+        <input type="search" id="site-search" placeholder="Search…" aria-label="Search" autocomplete="off" />
+        <button type="button" aria-label="Search">&#9906;</button>
+      </div>
+      <button type="button" class="theme-toggle" aria-label="Toggle dark and light mode">☾</button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="sports.html">New Sports</a>
+    <a href="events.html">Events</a>
+    <a href="blog.html">Blog</a>
+    <a href="register.html">Register</a>
+    <a href="book.html" class="book-cta-mob">Book Now →</a>
+  </div>
+
+  <main id="main-content">
+    <section class="page-hero" aria-label="Book a session header">
+      <div class="page-hero-bg" aria-hidden="true"></div>
+      <div class="page-hero-pattern" aria-hidden="true"></div>
+      <img id="hero-sport-image" class="page-hero-img" src="" alt="" aria-hidden="true" style="display:none;" />
+      <div class="container">
+        <span class="tag fade-up">Book Now</span>
+        <h1 class="page-title fade-up delay-1">Reserve Your<br>Training Session</h1>
+        <p class="page-subtitle fade-up delay-2">Use one simple booking page for every sport. Click any Book Now button and we’ll carry your selected sport through to the form.</p>
+      </div>
+    </section>
+
+    <section id="booking-section" class="form-section section-pad" aria-labelledby="booking-heading">
+      <div class="container">
+        <div class="reg-layout">
+          <div>
+            <span class="tag">Ready to Train?</span>
+            <h2 class="section-title" id="booking-heading">Book Any Sport in One Place</h2>
+            <div class="divider"></div>
+            <p style="color:var(--grey);line-height:1.9;margin-bottom:16px;">Choose the sport, date, and time that works for you. Our booking form makes it easy to reserve any session — from football and rugby to taekwondo, wrestling, and volleyball.</p>
+            <ul class="reg-features" aria-label="Benefits of booking online">
+              <li>Quick sport selection with category links</li>
+              <li>Instant booking details and confirmation message</li>
+              <li>Easy to change your preferred date and time</li>
+              <li>Support for all new and returning athletes</li>
+            </ul>
+            <div style="background:var(--dark3);border:1px solid var(--mid);border-radius:var(--radius);padding:24px;margin-top:24px;">
+              <div style="font-family:var(--font-cond);font-size:0.75rem;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:8px;">Tip</div>
+              <p style="font-size:0.88rem;color:var(--grey);">If you clicked a sport-specific Book Now button, that sport will be pre-selected in the booking form below.</p>
+            </div>
+          </div>
+
+          <div class="form-wrap" style="max-width:100%;">
+            <form id="booking-form" class="booking-form" novalidate aria-label="Booking form" autocomplete="on">
+              <div class="form-group">
+                <label class="form-label" for="sport">Sport <span aria-hidden="true">*</span></label>
+                <select class="form-select" id="sport" name="sport" required aria-required="true">
+                  <option value="">Choose a sport</option>
+                  <option value="football">Football</option>
+                  <option value="rugby">Rugby</option>
+                  <option value="gymnastics">Gymnastics</option>
+                  <option value="tabletennis">Table Tennis</option>
+                  <option value="gymworkout">Gym Workout</option>
+                  <option value="handball">Handball</option>
+                  <option value="wrestling">Wrestling</option>
+                  <option value="taekwondo">Taekwondo</option>
+                  <option value="volleyball">Volleyball</option>
+                </select>
+                <div class="form-error" id="sport-err" role="alert">Please choose a sport.</div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="full-name">Full Name <span aria-hidden="true">*</span></label>
+                  <input class="form-input" type="text" id="full-name" name="full_name" placeholder="E.g. Ama Boateng" required aria-required="true" autocomplete="name" />
+                  <div class="form-error" id="name-err" role="alert">Please enter your name.</div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="email">Email Address <span aria-hidden="true">*</span></label>
+                  <input class="form-input" type="email" id="email" name="email" placeholder="you@example.com" required aria-required="true" autocomplete="email" />
+                  <div class="form-error" id="email-err" role="alert">Please enter a valid email address.</div>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="phone">Phone Number</label>
+                  <input class="form-input" type="tel" id="phone" name="phone" placeholder="Optional" autocomplete="tel" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="booking-date">Preferred Date</label>
+                  <input class="form-input" type="date" id="booking-date" name="booking_date" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="booking-time">Preferred Time</label>
+                <input class="form-input" type="time" id="booking-time" name="booking_time" />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="notes">Notes</label>
+                <textarea class="form-textarea" id="notes" name="notes" placeholder="Tell us about your experience level or special requests."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-gold" style="width:100%;">Submit Booking Request</button>
+              <p id="booking-message" style="color:var(--gold);margin-top:18px;display:none;">Thanks! Your booking request has been received. We will contact you soon.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const sportImages = {
+      football: {
+        url: 'https://images.pexels.com/photos/34049622/pexels-photo-34049622.jpeg?w=800&h=600&fit=crop',
+        alt: 'Football players competing in a match'
+      },
+      rugby: {
+        url: 'https://images.pexels.com/photos/5116575/pexels-photo-5116575.jpeg?w=800&h=600&fit=crop',
+        alt: 'Rugby players in a scrum'
+      },
+      gymnastics: {
+        url: 'https://images.pexels.com/photos/6572624/pexels-photo-6572624.jpeg?w=800&h=600&fit=crop',
+        alt: 'A gymnast performing a jump'
+      },
+      tabletennis: {
+        url: 'https://images.pexels.com/photos/709134/pexels-photo-709134.jpeg?w=800&h=600&fit=crop',
+        alt: 'Table tennis player in action'
+      },
+      gymworkout: {
+        url: 'https://images.pexels.com/photos/31849599/pexels-photo-31849599.jpeg?w=800&h=600&fit=crop',
+        alt: 'Athletes training in a gym workout session'
+      },
+      handball: {
+        url: 'https://images.pexels.com/photos/10349969/pexels-photo-10349969.jpeg?w=800&h=600&fit=crop',
+        alt: 'Handball players competing'
+      },
+      wrestling: {
+        url: 'https://images.pexels.com/photos/29762867/pexels-photo-29762867.jpeg?w=800&h=600&fit=crop',
+        alt: 'Two wrestlers competing on a mat'
+      },
+      taekwondo: {
+        url: 'https://images.pexels.com/photos/30788992/pexels-photo-30788992.jpeg?w=800&h=600&fit=crop',
+        alt: 'Taekwondo athlete performing a high kick'
+      },
+      volleyball: {
+        url: 'https://images.pexels.com/photos/35514787/pexels-photo-35514787.jpeg?w=800&h=600&fit=crop',
+        alt: 'Volleyball players competing at the net'
+      }
+    };
+
+    function getQueryParam(name) {
+      const params = new URLSearchParams(window.location.search);
+      return params.get(name);
+    }
+
+    function setHeroImage(sportKey) {
+      const heroImage = document.getElementById('hero-sport-image');
+      const pageHero = document.querySelector('.page-hero');
+      if (sportKey && sportImages[sportKey]) {
+        heroImage.src = sportImages[sportKey].url;
+        heroImage.alt = sportImages[sportKey].alt;
+        heroImage.style.display = 'block';
+        pageHero.classList.add('has-image');
+      } else {
+        heroImage.style.display = 'none';
+        pageHero.classList.remove('has-image');
+      }
+    }
+
+    function showMessage(message) {
+      const msg = document.getElementById('booking-message');
+      msg.textContent = message;
+      msg.style.display = 'block';
+    }
+
+    function validateForm(form) {
+      let valid = true;
+      const sport = form.sport;
+      const fullName = form.full_name;
+      const email = form.email;
+      document.getElementById('sport-err').style.display = sport.value ? 'none' : 'block';
+      document.getElementById('name-err').style.display = fullName.value.trim() ? 'none' : 'block';
+      document.getElementById('email-err').style.display = email.value.trim() && email.checkValidity() ? 'none' : 'block';
+
+      if (!sport.value) valid = false;
+      if (!fullName.value.trim()) valid = false;
+      if (!email.value.trim() || !email.checkValidity()) valid = false;
+      return valid;
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const sportParam = getQueryParam('sport');
+      const select = document.getElementById('sport');
+      if (sportParam) {
+        const option = Array.from(select.options).find(opt => opt.value.toLowerCase() === sportParam.toLowerCase());
+        if (option) select.value = option.value;
+        setHeroImage(sportParam.toLowerCase());
+      }
+
+      select.addEventListener('change', function () {
+        setHeroImage(this.value);
+      });
+
+      const bookingForm = document.getElementById('booking-form');
+      bookingForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+        if (validateForm(bookingForm)) {
+          showMessage('Thanks! Your booking request has been received. We will contact you shortly.');
+          bookingForm.reset();
+          setTimeout(() => { document.getElementById('booking-message').style.display = 'none'; }, 8000);
+        }
+      });
+    });
+  </script>
+  <script src="theme-toggle.js"></script>
+</body>
+</html>

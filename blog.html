@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SRC Sports Academy Blog — sports news, academy updates, coach insights and community stories." />
+  <title>Blog | SRC Sports Academy</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a class="nav-logo" href="index.html" aria-label="SRC Sports Academy Home">
+        <div class="nav-logo-icon">SRC</div>
+        <div class="nav-logo-text"><span>Sports Academy</span><span>Pentecost University</span></div>
+      </a>
+      <ul class="nav-links" role="menubar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="sports.html">New Sports</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="book.html" class="book-cta">Book Now</a></li>
+      </ul>
+      <div class="nav-search" role="search">
+        <label for="site-search" class="sr-only">Search</label>
+        <input type="search" id="site-search" placeholder="Search…" aria-label="Search" />
+        <button type="button" aria-label="Search">&#9906;</button>
+      </div>
+      <button type="button" class="theme-toggle" aria-label="Toggle dark and light mode">☾</button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="sports.html">New Sports</a>
+    <a href="events.html">Events</a>
+    <a href="blog.html">Blog</a>
+    <a href="register.html">Register</a>
+    <a href="book.html" class="book-cta-mob">Book Now →</a>
+  </div>
+
+  <main id="main-content">
+
+    <section class="page-hero" aria-label="Blog page header">
+      <div class="page-hero-bg" aria-hidden="true"></div>
+      <div class="page-hero-pattern" aria-hidden="true"></div>
+      <div class="container">
+        <span class="tag fade-up">News &amp; Updates</span>
+        <h1 class="page-title fade-up delay-1">Academy<br>Blog</h1>
+        <p class="page-subtitle fade-up delay-2">Stories from coaches, athletes, and the community. Stay connected with everything happening at SRC Sports Academy.</p>
+      </div>
+    </section>
+
+    <!-- FEATURED POST -->
+    <section class="section-pad" aria-labelledby="featured-heading">
+      <div class="container">
+        <span class="tag">Featured</span>
+        <h2 class="section-title" id="featured-heading">Latest Story</h2>
+        <div class="divider"></div>
+        <div style="background:var(--dark2);border:1px solid var(--mid);border-radius:var(--radius);overflow:hidden;display:grid;grid-template-columns:1.2fr 1fr;gap:0;" class="featured-grid">
+          <img src="https://content.pexels.com/aigc-bundle/images/533b5337-2fcd-43fc-986f-695268042343.jpg"
+               alt="The SRC Sports Academy programme launch event" loading="lazy"
+               style="width:100%;height:100%;object-fit:cover;min-height:350px;" />
+          <div style="padding:48px;">
+            <div class="blog-meta">
+              <span class="blog-meta-tag">Academy News</span>
+              <span class="blog-meta-date">May 10, 2026</span>
+            </div>
+            <h3 style="font-family:var(--font-display);font-size:2rem;color:var(--white);line-height:1.2;margin-bottom:16px;letter-spacing:2px;">
+              SRC Launches Four New Sports Disciplines for 2026
+            </h3>
+            <p style="color:var(--grey);font-size:0.92rem;line-height:1.8;margin-bottom:24px;">
+              The SRC Sports Academy has officially announced the launch of Wrestling, Taekwondo, and Volleyball as part of a major expansion funded by the Ghana Sports Authority and Pentecost University. Enrolment is now open for all three disciplines.
+            </p>
+            <a href="#" class="btn btn-gold">Read Full Story</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORY FILTER -->
+    <div style="background:var(--dark2);border-top:1px solid var(--mid);border-bottom:1px solid var(--mid);padding:20px 0;" role="navigation" aria-label="Blog category filter">
+      <div class="container" style="display:flex;gap:10px;flex-wrap:wrap;align-items:center;">
+        <span style="font-family:var(--font-cond);font-size:0.75rem;letter-spacing:2px;color:var(--grey);text-transform:uppercase;">Filter:</span>
+        <button class="cat-btn active" data-cat="all" aria-pressed="true">All Posts</button>
+        <button class="cat-btn" data-cat="news" aria-pressed="false">Academy News</button>
+        <button class="cat-btn" data-cat="coach" aria-pressed="false">Coach Corner</button>
+        <button class="cat-btn" data-cat="community" aria-pressed="false">Community</button>
+        <button class="cat-btn" data-cat="sports" aria-pressed="false">Sports World</button>
+      </div>
+    </div>
+
+    <!-- BLOG GRID -->
+    <section class="section-pad" aria-labelledby="posts-heading">
+      <div class="container">
+        <h2 class="sr-only" id="posts-heading">All Blog Posts</h2>
+        <div class="blog-grid" id="blog-grid" role="list">
+
+          <article class="blog-card" role="listitem" data-category="news">
+            <img class="blog-card-img"
+                 src="https://images.pexels.com/photos/30788992/pexels-photo-30788992.jpeg?w=640&amp;h=480&amp;fit=crop"
+                 alt="Taekwondo practitioner mid-kick at a demonstration event" loading="lazy" />
+            <div class="blog-card-body">
+              <div class="blog-meta">
+                <span class="blog-meta-tag">Academy News</span>
+                <span class="blog-meta-date">May 5, 2026</span>
+              </div>
+              <h3 class="blog-card-title">Taekwondo Programme: What to Expect in Your First Month</h3>
+              <p class="blog-card-excerpt">Our head Taekwondo instructor walks you through the curriculum, belt progression, and what new students should prepare before their first session.</p>
+              <a href="#" class="blog-card-link" aria-label="Read more: Taekwondo Programme">Read More →</a>
+            </div>
+          </article>
+
+          <article class="blog-card" role="listitem" data-category="coach">
+            <img class="blog-card-img"
+                 src="https://images.pexels.com/photos/274422/pexels-photo-274422.jpeg?w=640&amp;h=480&amp;fit=crop"
+                 alt="Football coaching session at SRC Academy" loading="lazy" />
+            <div class="blog-card-body">
+              <div class="blog-meta">
+                <span class="blog-meta-tag">Coach Corner</span>
+                <span class="blog-meta-date">April 28, 2026</span>
+              </div>
+              <h3 class="blog-card-title">5 Drills Every Footballer Should Practice Daily</h3>
+              <p class="blog-card-excerpt">Coach Ama Boateng shares her top five daily drills for improving touch, positioning, and match awareness — suitable for all levels.</p>
+              <a href="#" class="blog-card-link" aria-label="Read more: Football drills">Read More →</a>
+            </div>
+          </article>
+
+          <article class="blog-card" role="listitem" data-category="community">
+            <img class="blog-card-img"
+                 src="https://images.pexels.com/photos/35514787/pexels-photo-35514787.jpeg"
+                 alt="Community volleyball match with mixed age players" loading="lazy" />
+            <div class="blog-card-body">
+              <div class="blog-meta">
+                <span class="blog-meta-tag">Community</span>
+                <span class="blog-meta-date">April 20, 2026</span>
+              </div>
+              <h3 class="blog-card-title">How the Volleyball Programme Changed My Life — Student Testimonial</h3>
+              <p class="blog-card-excerpt">Level 300 Business student Akosua Esi shares how joining SRC Academy's volleyball programme helped her build confidence and find community on campus.</p>
+              <a href="#" class="blog-card-link" aria-label="Read more: Student testimonial">Read More →</a>
+            </div>
+          </article>
+
+          <article class="blog-card" role="listitem" data-category="coach">
+            <img class="blog-card-img"
+                 src="https://images.pexels.com/photos/9799203/pexels-photo-9799203.jpeg"
+                 alt="Rugby players in a scrum during a match" loading="lazy" />
+            <div class="blog-card-body">
+              <div class="blog-meta">
+                <span class="blog-meta-tag">Coach Corner</span>
+                <span class="blog-meta-date">April 8, 2026</span>
+              </div>
+              <h3 class="blog-card-title">Understanding the Laws of Rugby: A Beginner's Guide</h3>
+              <p class="blog-card-excerpt">New to rugby? Our coaching staff breaks down the essential rules, positions, and terminology to get you match-ready faster.</p>
+              <a href="#" class="blog-card-link" aria-label="Read more: Rugby guide">Read More →</a>
+            </div>
+          </article>
+
+          <article class="blog-card" role="listitem" data-category="news">
+            <img class="blog-card-img"
+                 src="https://images.pexels.com/photos/6572624/pexels-photo-6572624.jpeg"
+                 alt="Gymnast mid-performance at a university competition" loading="lazy" />
+            <div class="blog-card-body">
+              <div class="blog-meta">
+                <span class="blog-meta-tag">Academy News</span>
+                <span class="blog-meta-date">March 30, 2026</span>
+              </div>
+              <h3 class="blog-card-title">PU Gymnastics Team Places 2nd at Regional Championships</h3>
+              <p class="blog-card-excerpt">The Pentecost University gymnastics squad delivered an outstanding performance at the Greater Accra Regional Championships, finishing second overall.</p>
+              <a href="#" class="blog-card-link" aria-label="Read more: Gymnastics championship">Read More →</a>
+            </div>
+          </article>
+
+        </div>
+
+        <div style="text-align:center;margin-top:50px;" id="no-results" style="display:none;">
+          <p style="color:var(--grey);font-family:var(--font-cond);letter-spacing:2px;">No posts in this category yet.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER CTA -->
+    <section class="section-pad" style="background:var(--dark2);border-top:1px solid var(--mid);" aria-labelledby="newsletter-heading">
+      <div class="container text-center">
+        <span class="tag">Stay Updated</span>
+        <h2 class="section-title" id="newsletter-heading">Never Miss a Story</h2>
+        <div class="divider center"></div>
+        <p class="section-sub" style="margin:0 auto 36px;">Subscribe to the SRC Sports Academy newsletter for the latest news, event announcements, and coaching tips.</p>
+        <form id="newsletter-form" style="max-width:480px;margin:0 auto;display:flex;gap:12px;flex-wrap:wrap;" novalidate aria-label="Newsletter subscription form">
+          <label for="nl-email" class="sr-only">Your email address</label>
+          <input type="email" id="nl-email" class="form-input" placeholder="Your email address" required aria-required="true" style="flex:1;min-width:200px;" />
+          <button type="submit" class="btn btn-gold">Subscribe</button>
+        </form>
+        <div class="form-success" id="nl-success" style="max-width:480px;margin:16px auto 0;" role="status">✓ You're subscribed! Welcome to the SRC Academy community.</div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo">
+            <div class="nav-logo-icon">SRC</div>
+            <div class="nav-logo-text"><span>Sports Academy</span><span>Pentecost University</span></div>
+          </div>
+          <p>Champions are made every day. Stories are told here.</p>
+          <div class="social-icons" aria-label="Social media links">
+            <a href="#" class="social-icon" aria-label="Facebook">f</a>
+            <a href="#" class="social-icon" aria-label="Twitter">𝕏</a>
+          </div>
+        </div>
+        <div class="footer-col"><h4>Pages</h4><ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="sports.html">New Sports</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Join</h4><ul>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="book.html">Book Online</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Contact</h4><ul>
+          <li><a href="mailto:sports@pentvars.edu.gh">sports@pentvars.edu.gh</a></li>
+        </ul></div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 SRC Sports Academy, Pentecost University.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+          integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script>
+  $(function () {
+    $('#hamburger').on('click', function () {
+      $('#mobile-nav, #hamburger').toggleClass('open');
+      $(this).attr('aria-expanded', $('#mobile-nav').hasClass('open'));
+    });
+
+    /* Category filter */
+    $('.cat-btn').on('click', function () {
+      const cat = $(this).data('cat');
+      $('.cat-btn').removeClass('active').attr('aria-pressed', false);
+      $(this).addClass('active').attr('aria-pressed', true);
+      let count = 0;
+      $('.blog-card').each(function () {
+        if (cat === 'all' || $(this).data('category') === cat) {
+          $(this).fadeIn(200);
+          count++;
+        } else {
+          $(this).fadeOut(150);
+        }
+      });
+      if (count === 0) $('#no-results').show(); else $('#no-results').hide();
+    });
+
+    /* Newsletter */
+    $('#newsletter-form').on('submit', function (e) {
+      e.preventDefault();
+      const email = $('#nl-email').val().trim();
+      if (!email || !email.includes('@')) {
+        $('#nl-email').addClass('invalid');
+        return;
+      }
+      $('#nl-email').removeClass('invalid');
+      setTimeout(() => {
+        $('#nl-success').show();
+        $(this)[0].reset();
+      }, 600);
+    });
+  });
+  </script>
+  <style>
+    .cat-btn {
+      padding:7px 18px;
+      font-family:var(--font-cond);
+      font-size:0.8rem;
+      letter-spacing:1.5px;
+      text-transform:uppercase;
+      background:none;
+      border:1px solid var(--mid);
+      color:var(--grey);
+      border-radius:var(--radius);
+      cursor:pointer;
+      transition:var(--transition);
+    }
+    .cat-btn.active, .cat-btn:hover {
+      background:var(--gold);
+      color:var(--dark);
+      border-color:var(--gold);
+    }
+    @media(max-width:700px) {
+      .featured-grid { grid-template-columns:1fr !important; }
+      .featured-grid img { min-height:200px !important; }
+    }
+  </style>
+  <script src="theme-toggle.js"></script>
+</body>
+</html>

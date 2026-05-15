@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Upcoming sports events, fixtures, schedules and competitions at SRC Sports Academy." />
+  <title>Events | SRC Sports Academy</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a class="nav-logo" href="index.html" aria-label="SRC Sports Academy Home">
+        <div class="nav-logo-icon">SRC</div>
+        <div class="nav-logo-text"><span>Sports Academy</span><span>Pentecost University</span></div>
+      </a>
+      <ul class="nav-links" role="menubar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="sports.html">New Sports</a></li>
+        <li><a href="events.html" class="active">Events</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="book.html" class="book-cta">Book Now</a></li>
+      </ul>
+      <div class="nav-search" role="search">
+        <label for="site-search" class="sr-only">Search</label>
+        <input type="search" id="site-search" placeholder="Search…" aria-label="Search" />
+        <button type="button" aria-label="Search">&#9906;</button>
+      </div>
+      <button type="button" class="theme-toggle" aria-label="Toggle dark and light mode">☾</button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="sports.html">New Sports</a>
+    <a href="events.html">Events</a>
+    <a href="blog.html">Blog</a>
+    <a href="register.html">Register</a>
+    <a href="book.html" class="book-cta-mob">Book Now →</a>
+  </div>
+
+  <main id="main-content">
+
+    <section class="page-hero" aria-label="Events page header">
+      <div class="page-hero-bg" aria-hidden="true"></div>
+      <div class="page-hero-pattern" aria-hidden="true"></div>
+      <div class="container">
+        <span class="tag fade-up">2025 / 2026 Season</span>
+        <h1 class="page-title fade-up delay-1">Fixtures &amp;<br>Events</h1>
+        <p class="page-subtitle fade-up delay-2">Upcoming competitions, training events, open days, and community fixtures across all our disciplines.</p>
+      </div>
+    </section>
+
+    <!-- FILTER BAR -->
+    <div style="background:var(--dark2);border-bottom:1px solid var(--mid);padding:20px 0;" role="navigation" aria-label="Event category filter">
+      <div class="container" style="display:flex;gap:10px;flex-wrap:wrap;">
+        <button class="filter-btn active btn" style="padding:8px 20px;font-size:0.78rem;" data-filter="all" aria-pressed="true">All Events</button>
+        <button class="filter-btn btn btn-outline" style="padding:8px 20px;font-size:0.78rem;" data-filter="competition" aria-pressed="false">Competitions</button>
+        <button class="filter-btn btn btn-outline" style="padding:8px 20px;font-size:0.78rem;" data-filter="training" aria-pressed="false">Training Days</button>
+        <button class="filter-btn btn btn-outline" style="padding:8px 20px;font-size:0.78rem;" data-filter="openday" aria-pressed="false">Open Days</button>
+        <button class="filter-btn btn btn-outline" style="padding:8px 20px;font-size:0.78rem;" data-filter="community" aria-pressed="false">Community</button>
+      </div>
+    </div>
+
+    <!-- UPCOMING EVENTS -->
+    <section class="section-pad" aria-labelledby="events-heading">
+      <div class="container">
+        <span class="tag">Coming Up</span>
+        <h2 class="section-title" id="events-heading">Upcoming Events</h2>
+        <div class="divider"></div>
+
+        <div class="events-list" id="events-list" role="list">
+
+          <article class="event-item" role="listitem" data-category="openday">
+            <div class="event-date" aria-label="May 20">
+              <div class="event-day">20</div>
+              <div class="event-month">May</div>
+            </div>
+            <div class="event-info">
+              <h3>SRC Academy Open Day — New Sports Launch</h3>
+              <p>Come explore Wrestling, Taekwondo, and Volleyball. Free trial sessions for all attendees. No registration required.</p>
+            </div>
+            <div class="event-meta">
+              <span class="event-time">09:00 – 14:00</span>
+              <span class="event-venue">Main Sports Hall, PU Campus</span>
+              <span class="event-badge">Open Day</span>
+            </div>
+          </article>
+
+          <article class="event-item" role="listitem" data-category="competition">
+            <div class="event-date" aria-label="June 7">
+              <div class="event-day">07</div>
+              <div class="event-month">Jun</div>
+            </div>
+            <div class="event-info">
+              <h3>Inter-University Football Championship — Round 1</h3>
+              <p>PU Lions vs. Central University FC. Home fixture at the university pitch. All students and community members welcome.</p>
+            </div>
+            <div class="event-meta">
+              <span class="event-time">15:00 Kick-Off</span>
+              <span class="event-venue">PU Football Pitch</span>
+              <span class="event-badge">Competition</span>
+            </div>
+          </article>
+
+          <article class="event-item" role="listitem" data-category="training">
+            <div class="event-date" aria-label="June 14">
+              <div class="event-day">14</div>
+              <div class="event-month">Jun</div>
+            </div>
+            <div class="event-info">
+              <h3>Taekwondo Grading Day — Belt Examinations</h3>
+              <p>All registered Taekwondo practitioners are invited to attempt their next belt grading. Spectators welcome.</p>
+            </div>
+            <div class="event-meta">
+              <span class="event-time">10:00 – 13:00</span>
+              <span class="event-venue">Dojang Studio, PU</span>
+              <span class="event-badge">Training</span>
+            </div>
+          </article>
+
+          <article class="event-item" role="listitem" data-category="competition">
+            <div class="event-date" aria-label="June 21">
+              <div class="event-day">21</div>
+              <div class="event-month">Jun</div>
+            </div>
+            <div class="event-info">
+              <h3>Greater Accra Universities Wrestling Tournament</h3>
+              <p>SRC Academy wrestling athletes compete against regional universities in this annual tournament hosted at Legon.</p>
+            </div>
+            <div class="event-meta">
+              <span class="event-time">All Day</span>
+              <span class="event-venue">University of Ghana, Legon</span>
+              <span class="event-badge">Competition</span>
+            </div>
+          </article>
+
+          <article class="event-item" role="listitem" data-category="community">
+            <div class="event-date" aria-label="July 5">
+              <div class="event-day">05</div>
+              <div class="event-month">Jul</div>
+            </div>
+            <div class="event-info">
+              <h3>Community Volleyball Day — Family Fun Tournament</h3>
+              <p>An informal community volleyball tournament open to all ages. Team up with friends, family, or fellow students. Prizes for top teams!</p>
+            </div>
+            <div class="event-meta">
+              <span class="event-time">09:00 – 17:00</span>
+              <span class="event-venue">Indoor Sports Court, PU</span>
+              <span class="event-badge">Community</span>
+            </div>
+          </article>
+
+          <article class="event-item" role="listitem" data-category="competition">
+            <div class="event-date" aria-label="July 12">
+              <div class="event-day">12</div>
+              <div class="event-month">Jul</div>
+            </div>
+            <div class="event-info">
+              <h3>National Universities Wrestling Championships</h3>
+              <p>PU Wrestling Squad competes at the National Championships. Come cheer on our athletes and show your support.</p>
+            </div>
+            <div class="event-meta">
+              <span class="event-time">08:00 – 18:00</span>
+              <span class="event-venue">Accra Sports Stadium</span>
+              <span class="event-badge">Competition</span>
+            </div>
+          </article>
+
+          <article class="event-item" role="listitem" data-category="training">
+            <div class="event-date" aria-label="July 19">
+              <div class="event-day">19</div>
+              <div class="event-month">Jul</div>
+            </div>
+            <div class="event-info">
+              <h3>Summer Training Camp — Multi-Sport Intensive</h3>
+              <p>A week-long intensive training camp for all SRC Academy registered athletes. Guest coaches from national federations will lead sessions.</p>
+            </div>
+            <div class="event-meta">
+              <span class="event-time">19–25 Jul</span>
+              <span class="event-venue">PU Campus Facilities</span>
+              <span class="event-badge">Training</span>
+            </div>
+          </article>
+
+          <article class="event-item" role="listitem" data-category="openday">
+            <div class="event-date" aria-label="August 2">
+              <div class="event-day">02</div>
+              <div class="event-month">Aug</div>
+            </div>
+            <div class="event-info">
+              <h3>New Semester Registration Open Day</h3>
+              <p>Meet coaches, see facilities, and register for the 2026/27 academic year sports programmes. All sports available for trial.</p>
+            </div>
+            <div class="event-meta">
+              <span class="event-time">10:00 – 15:00</span>
+              <span class="event-venue">Main Hall, PU</span>
+              <span class="event-badge">Open Day</span>
+            </div>
+          </article>
+
+        </div>
+
+        <div style="text-align:center;margin-top:40px;">
+          <a href="book.html" class="btn btn-gold">Reserve Your Spot at an Event</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FIXTURES TABLE -->
+    <section class="section-pad" style="background:var(--dark2);" aria-labelledby="fixtures-heading">
+      <div class="container">
+        <span class="tag">Schedule</span>
+        <h2 class="section-title" id="fixtures-heading">Weekly Training Schedule</h2>
+        <div class="divider"></div>
+        <div style="overflow-x:auto;" role="region" aria-label="Weekly training schedule table">
+          <table style="width:100%;border-collapse:collapse;font-family:var(--font-cond);font-size:0.9rem;" aria-label="Training timetable">
+            <thead>
+              <tr style="background:var(--gold);color:var(--dark);">
+                <th scope="col" style="padding:14px 20px;text-align:left;letter-spacing:2px;text-transform:uppercase;">Sport</th>
+                <th scope="col" style="padding:14px 20px;text-align:left;letter-spacing:2px;text-transform:uppercase;">Mon</th>
+                <th scope="col" style="padding:14px 20px;text-align:left;letter-spacing:2px;text-transform:uppercase;">Tue</th>
+                <th scope="col" style="padding:14px 20px;text-align:left;letter-spacing:2px;text-transform:uppercase;">Wed</th>
+                <th scope="col" style="padding:14px 20px;text-align:left;letter-spacing:2px;text-transform:uppercase;">Thu</th>
+                <th scope="col" style="padding:14px 20px;text-align:left;letter-spacing:2px;text-transform:uppercase;">Fri</th>
+                <th scope="col" style="padding:14px 20px;text-align:left;letter-spacing:2px;text-transform:uppercase;">Sat</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom:1px solid var(--mid);">
+                <td style="padding:14px 20px;color:var(--white);font-weight:700;">Football</td>
+                <td style="padding:14px 20px;color:var(--gold);">16:00–18:00</td>
+                <td style="padding:14px 20px;color:var(--grey);">—</td>
+                <td style="padding:14px 20px;color:var(--gold);">16:00–18:00</td>
+                <td style="padding:14px 20px;color:var(--grey);">—</td>
+                <td style="padding:14px 20px;color:var(--gold);">16:00–18:00</td>
+                <td style="padding:14px 20px;color:var(--gold);">09:00–11:00</td>
+              </tr>
+              <tr style="border-bottom:1px solid var(--mid);background:rgba(255,255,255,0.02);">
+                <td style="padding:14px 20px;color:var(--white);font-weight:700;">Rugby</td>
+                <td style="padding:14px 20px;color:var(--grey);">—</td>
+                <td style="padding:14px 20px;color:var(--gold);">15:00–17:00</td>
+                <td style="padding:14px 20px;color:var(--grey);">—</td>
+                <td style="padding:14px 20px;color:var(--gold);">15:00–17:00</td>
+                <td style="padding:14px 20px;color:var(--grey);">—</td>
+                <td style="padding:14px 20px;color:var(--gold);">10:00–12:00</td>
+              </tr>
+              <tr style="border-bottom:1px solid var(--mid);">
+                <td style="padding:14px 20px;color:var(--white);font-weight:700;">Wrestling ★</td>
+                <td style="padding:14px 20px;color:var(--gold);">17:00–19:00</td>
+                <td style="padding:14px 20px;color:var(--grey);">—</td>
+                <td style="padding:14px 20px;color:var(--gold);">17:00–19:00</td>
+                <td style="padding:14px 20px;color:var(--grey);">—</td>
+                <td style="padding:14px 20px;color:var(--gold);">17:00–19:00</td>
+                <td style="padding:14px 20px;color:var(--grey);">—</td>
+              </tr>
+              <tr style="border-bottom:1px solid var(--mid);background:rgba(255,255,255,0.02);">
+                <td style="padding:14px 20px;color:var(--white);font-weight:700;">Taekwondo ★</td>
+                <td style="padding:14px 20px;color:var(--grey);">—</td>
+                <td style="padding:14px 20px;color:var(--gold);">16:00–18:00</td>
+                <td style="padding:14px 20px;color:var(--grey);">—</td>
+                <td style="padding:14px 20px;color:var(--gold);">16:00–18:00</td>
+                <td style="padding:14px 20px;color:var(--grey);">—</td>
+                <td style="padding:14px 20px;color:var(--gold);">09:00–11:00</td>
+              </tr>
+              <tr style="border-bottom:1px solid var(--mid);">
+                <td style="padding:14px 20px;color:var(--white);font-weight:700;">Volleyball ★</td>
+                <td style="padding:14px 20px;color:var(--grey);">—</td>
+                <td style="padding:14px 20px;color:var(--gold);">17:00–19:00</td>
+                <td style="padding:14px 20px;color:var(--grey);">—</td>
+                <td style="padding:14px 20px;color:var(--gold);">17:00–19:00</td>
+                <td style="padding:14px 20px;color:var(--grey);">—</td>
+                <td style="padding:14px 20px;color:var(--gold);">14:00–16:00</td>
+              </tr>
+            </tbody>
+          </table>
+          <p style="font-size:0.78rem;color:var(--grey);margin-top:12px;">★ New discipline | All times are Ghana Standard Time (GMT+0)</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo">
+            <div class="nav-logo-icon">SRC</div>
+            <div class="nav-logo-text"><span>Sports Academy</span><span>Pentecost University</span></div>
+          </div>
+          <p>Every champion started somewhere. Start here.</p>
+          <div class="social-icons" aria-label="Social media links">
+            <a href="#" class="social-icon" aria-label="Facebook">f</a>
+            <a href="#" class="social-icon" aria-label="Twitter">𝕏</a>
+          </div>
+        </div>
+        <div class="footer-col"><h4>Pages</h4><ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="sports.html">New Sports</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Join</h4><ul>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="book.html">Book Online</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Contact</h4><ul>
+          <li><a href="mailto:sports@pentvars.edu.gh">sports@pentvars.edu.gh</a></li>
+        </ul></div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 SRC Sports Academy, Pentecost University.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+          integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobile-nav');
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const eventItems = document.querySelectorAll('.event-item');
+
+    if (hamburger && mobileNav) {
+      hamburger.addEventListener('click', function () {
+        mobileNav.classList.toggle('open');
+        hamburger.classList.toggle('open');
+        hamburger.setAttribute('aria-expanded', mobileNav.classList.contains('open'));
+      });
+    }
+
+    function updateEventFilter(filter) {
+      filterButtons.forEach((btn) => {
+        btn.classList.toggle('btn-gold', btn.dataset.filter === filter);
+        btn.classList.toggle('btn-outline', btn.dataset.filter !== filter);
+        btn.setAttribute('aria-pressed', btn.dataset.filter === filter ? 'true' : 'false');
+      });
+
+      eventItems.forEach((item) => {
+        const show = filter === 'all' || item.dataset.category === filter;
+        item.style.display = show ? '' : 'none';
+      });
+    }
+
+    filterButtons.forEach((button) => {
+      button.addEventListener('click', function () {
+        updateEventFilter(this.dataset.filter);
+      });
+    });
+
+    updateEventFilter('all');
+  });
+  </script>
+  <style>
+    .filter-btn { cursor:pointer; }
+    .filter-btn.btn-gold { background:var(--gold);color:var(--dark);border-color:var(--gold); }
+  </style>
+  <script src="theme-toggle.js"></script>
+</body>
+</html>
